@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="./css/common.css"> -->
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script>
+		// alert("dd");
+		// $(document).ready(function(){
+		// 	$("button").click(function(){
+		// 		// $("p").hide();
+		// 		$(".divid").hide();
+		// 	});
+		// });
+		$(function(){
+			$("button").click(function(){
+				// $("p").hide();
+				// $(".divid").hide(1000);
+				// $(".divid1").animate({left:'250px'});
+				alert($("p").text());
+			});
+			$("p").click(function(){
+				// alert("test");
+			});
+		});
+	</script>
+	<style type="text/css">
+		img{
+			max-width: 100%;
+			/*height: auto;*/
+			/*width: auto;*/
+			/*-ms-interpolation-mode:bicubic;*/
+		}
+		html{
+			font-size: 10px;
+			height: 100%;
+		}
+		/* 列表 ul ol */
+		ul,ol,li{
+			list-style: none
+		}
+		
+		/*.page-header .sub-nav li{
+			text-align: center;
+			padding-top: 1.4rem
+		}
+		.page-header .gywm_nav,.page-header .xwzx_nav{
+			right:-22px;
+		}
+		.page-header .sub-nav .box{
+			margin-top: 16px
+		}
+		.page-header .sub-nav a{
+			color:#F7F7F7;
+			flex: 1;
+			text-align: center
+		}
+
+		
+		.page-header .nav>li:hover>a{
+			color:#467BFF
+		}
+		.page-header .sub-nav a:hover{
+			color:#396DF1
+		}*/
+		/*.page-header .nav{
+			position: absolute;
+			top:30px;
+			right: 18.75%;
+			z-index: 999
+		}*/
+		.nav>li{
+			display: inline-block;
+			padding-left: 2.8rem;
+			cursor: pointer;
+			position: relative;
+			display: none;
+		}
+		/*.page-header .nav>li a{
+			color:red;
+			font-size: 1.5rem;
+			padding-bottom: 10px;
+		}*/
+		.page-header .sub-nav{
+			position: absolute;
+			top:26px;
+			right:-28px;
+			background: #313756;
+			z-index: 9999;
+			display: none;
+			padding: 0 1.8rem 1.8rem 1.8rem
+		}
+		/*.page-header .nav>li:hover .sub-nav{
+			display:block;
+		}*/
+		.navdd{
+			background-color: green;
+			/*float:right;*/
+			position: absolute;
+			/*left: 60%;*/
+			right: 8px;
+			top: 8px;
+			display: none;
+		}
+		.navdd>li:hover .sub-navdd{
+			/*color: green;*/
+			display:block;
+		}
+		.navdd .sub-navdd{
+			position: absolute;
+			/*left: -40px;*/
+			background-color: red;
+			padding-left: 0px;
+			top: 12px;
+			/*margin-right: 5px;*/
+			width: 50px;
+			/*left: 0px;*/
+			display: none;
+		}
+		.navdd> li{
+			margin-right: 20px;
+			display: inline-block;
+		}
+		.divroot {
+			background-color: red;
+			width: 100%;
+			height: 200px;
+		}
+
+		/*#list li{float:left;width:100px;padding:6px;list-style:none;}
+		#list li .pic{display:block;width:80px;margin:0 auto;border:1px solid #cccccc;padding:2px;}
+		#list li .pic img{width:80px;height:80px;}*/
+		.float-ul{
+			/*width: 100%; */
+			overflow: hidden; /*清除浮动*/
+			/*zoom: 1;*/
+		}
+		.box{
+			display: flex;
+			justify-content: center
+		}
+		.float-ul li{
+			float: left; 
+			width: 30%;
+			/*height: auto;*/
+			/*width:30vw;*/
+			height: 30vw;
+			margin-right: 10px;
+			/*background-color: green;*/
+			border:1px solid gray;
+			/*position: relative;*/
+			/*display: flex;*/
+/*justify-content:center;*/
+			/*text-align:center;*/
+			/*line-height: 30vw;*/
+			/*vertical-align:bottom;*/
+			/*vertical-align:middle;*/
+			/*position: relative;*/
+		}
+		.divtit{
+			width: 100%;
+			height: 5vw;
+			line-height:5vw;
+			/*padding-top: 20px;*/
+			/*padding-bottom: 30px;*/
+			background-color: gray;
+			text-align: center;
+			/*width: 300px;*/
+			/*height: 30px;*/
+			/*position: relative;
+			left: 0px;
+			line-height:5vw;
+			height: 5vw;
+			text-align:center;
+			bottom: 0px;*/
+		}
+		.float-title{
+			float: left;
+			color: red;
+		}
+		.imgtest{
+			/*no-repeat*/
+			width: 70px;
+			height: 70px;
+			/*//这是为了让图片太大取其中间部分*/
+			background-position: center; 
+			/*//完全覆盖住div不留空*/
+			background-repeat:no-repeat;
+			background-size: cover; 
+			background-image:url(./images/home/scheme/pic000.png);
+			/*background: url(./images/home/scheme/pic000.png);*/
+			/*background-color: green;*/
+		}
+		.imgroot img{
+			/*width: 50px;*/
+			/*height: 50px;*/
+			/*display: none;*/
+			/*width:100%;*/
+			/*height:auto;*/
+			/*max-width: 100%;*/
+    /*height: auto;*/
+    /*width: auto;*/
+			/*margin-top: 50px;*/
+			vertical-align:middle;
+		}
+		.pic {
+			display: inline-block;
+			width: 400px;
+			height: 400px;
+			overflow: hidden;
+		}
+		.imgroot{
+			width: 100%;
+			height: 25vw;
+			line-height:25vw;
+			text-align:center;
+			/*background-color: red;*/
+			position: relative;
+		}
+		.imgroot:hover .text-tip{
+			display: block;
+		}
+		.text-tip{
+			position: absolute;
+			top: 10vw;
+			left: 0px;
+			width: 100%;
+			color: orange;
+			/*text-align:center;*/
+			/*background-color: green;*/
+			/*line-height:25vw;*/
+			line-height: 16px;
+			display: none;
+		}
+
+		.pic img {
+			max-width: 400px;
+			max-height: 400px;
+		}
+
+
+		 
+	</style>
+	<title>111</title>
+</head>
+<body>
+
+	<ul id="list" class="float-ul">
+		<li class="float-ul">
+			<div class="imgroot" >
+				<!-- <div> -->
+					<img src="./images/home/scheme/pic0.png" alt="" />
+					<div class="text-tip">我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹我是雪豹</div>
+				<!-- </div> -->
+			</div>
+			<div class="divtit">水电费爽肤水方式是否</div>
+		</li>
+		<li class="float-ul">
+			<div class="imgroot">
+				<img src="./images/home/scheme/pic00.png" alt="" />
+			</div>
+			<div class="divtit">
+				水电费爽肤水方式是否
+			</div>
+		</li>
+		<li class="float-ul">
+			<div class="imgroot">
+				<img src="./images/home/scheme/pic03.png" alt="" />
+			</div>
+			<div class="divtit">
+				水电费爽肤水方式是否
+			</div>
+		</li>
+	</ul>
+
+	<div style="position:relative;width:200px;height:200px;">
+		　　<img src="./images/home/scheme/pic0.png" />
+		　　<div style="position:absolute; z-index:2; left:10px; top:10px;color:red; ">添加文字...添加文字...添加文字...</div>
+	</div>
+
+	<div class="imgtest">
+		<img  alt="" />
+	</div>
+	<!-- <span class="pic"><img src="./images/home/scheme/pic0.png" /></span> -->
+
+
+
+	<!-- <img src="./images/home/scheme/pic03.png" alt="" />
+	<div class="float-title">浮动交流发电机啊老大</div>
+	<div class="float-titleddd">ddd交流发电机啊老大</div>
+	<div class="float-titleddd">ddd交流发电机啊老大</div>
+	<div class="float-titleddd">ddd交流发电机啊老大</div>
+	
+	 -->
+	
+	<!-- <div class="home-banner">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="./images/banner/home_swiper01.png" alt="banner"></div>
+			</div>
+		</div>
+	</div> -->
+	<div class="page-headerdd">
+
+		<div class="navdd">
+			<li><a class="nav-activedd" href="./index.html">首页</a></li>
+			<li>
+				<a class="aaaa">青柠物联</a>
+				<ul class="sub-navdd">
+					<li><a href="./pages/znxf.html">智慧消防</a></li>
+					<li><a href="./pages/znxy.html">智慧校园</a></li>
+					<li><a href="./pages/zncc.html">智慧仓储</a></li>
+					<li><a href="./pages/znxq.html">智慧小区</a></li>
+					<li><a href="./pages/zntc.html">智慧停车</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="aaaa">青柠卫通</a>
+				<ul class="sub-navdd">
+					<li><a href="/pages/qnwt/index.html">通信业务</a></li>
+					<li><a href="/pages/qnwt/jjfa.html">解决方案</a></li>
+					<li><a href="/pages/qnwt/wxzl.html">卫星资源</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>新闻中心</a>
+				<ul class="sub-navdd">
+					<li><a href="./pages/gsdt.html">公司动态</a></li>
+					<li><a href="./pages/hyxw.html">行业新闻</a></li>
+					<li><a href="./pages/mtbd.html">媒体报道</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="./pages/gywm.html">关于我们</a>
+				<ul class="sub-navdd">
+					<li><a href="./pages/gywm.html#gsjj">公司简介</a></li>
+					<li><a href="./pages/gywm.html#fzlc">发展历程</a></li>
+					<li><a href="./pages/gywm.html#zzry">资质荣誉</a></li>
+				</ul>
+			</li> 
+		</div>
+	</div>
+
+	<!-- <div class="xxx">你好</div>
+	<div  class="listd">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</div>
+ -->
+
+	<!-- </ul> -->
+<!-- <p>这是另一个段落。</p> -->
+	<!-- <button>点我</button>
+	发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达发达
+	<div class="divroot">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+	</div>
+	<div class="brife">
+		<p>智慧小区</p>
+		Intelligent communi
+	</div> -->
+</body>
+</html>
+

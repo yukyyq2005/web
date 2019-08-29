@@ -1,0 +1,334 @@
+@charset "utf-8";
+html{
+    font-size: 10px;
+    height: 100%;
+
+}
+/* 格式化标签*/
+a,
+p,
+img,
+div,
+body,
+ul,li,ol,
+dl,dt,dd,
+button,form,
+h1,h2,h3,h4,h5,h6,
+table,th,tr,td,tbody,
+input,textarea,select,
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{
+    margin:0;
+    padding:0;
+    border:none;
+    outline: none;
+    font-family:"PingFangSC-Light","Microsoft YaHei-Semilighti";
+  }
+
+/* 图片自适应 */
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    -ms-interpolation-mode:bicubic;}
+
+
+/* 字体 */
+body{
+    height: 100%;
+}
+/* a标签 */
+a{
+    text-decoration: none;
+  }
+a:hover{
+    text-decoration:none;
+}
+
+
+/* 列表 ul ol */
+ul,ol,li{
+    list-style: none}
+/* scroll */
+/*滚动条样式*/
+::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.6);
+}
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.2);
+}
+
+/* page common css */
+/* common css */
+.wrap-full{
+    width: 100%
+}
+.wrap-part{
+    padding:0 18.75%
+}
+.box{
+    display: flex;
+    justify-content: center
+}
+.box-align{
+    display: flex;
+    align-items: center
+}
+.box-center{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.box-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.box-end{
+    display: flex;
+    justify-content: flex-end
+}
+.font-blue{
+    color: #467BFF;
+}
+/* page - header */
+/* nav 导航*/
+.page-header{
+    
+}
+.page-header .nav{
+    position: absolute;
+    top:30px;
+    right: 18.75%;
+    z-index: 999
+}
+.page-header .nav>li{
+    display: inline-block;
+    padding-left: 2.8rem;
+    cursor: pointer;
+    position: relative;
+}
+.page-header .nav>li a{
+    color:#F7F7F7;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.page-header .sub-nav{
+    position: absolute;
+    top:26px;
+    right:-28px;
+    background: #313756;
+    z-index: 9999;
+    display: none;
+    padding: 0 1.8rem 1.8rem 1.8rem
+    
+}
+.page-header .sub-nav li{
+    text-align: center;
+    padding-top: 1.4rem
+}
+.page-header .gywm_nav,.page-header .xwzx_nav{
+    right:-22px;
+}
+.page-header .sub-nav .box{
+    margin-top: 16px
+}
+.page-header .sub-nav a{
+    color:#F7F7F7;
+    flex: 1;
+    text-align: center
+}
+
+.page-header .nav>li:hover .sub-nav{
+    display:block
+}
+.page-header .nav>li:hover>a{
+    color:#467BFF
+}
+.page-header .sub-nav a:hover{
+    color:#396DF1
+}
+
+.page-header .logo{
+    position: absolute;
+    top:30px;
+    left: 18.75%;
+    z-index: 99
+}
+.page-header .banner{
+    font-size: 0;
+    position: relative;
+}
+.page-header .banner img{
+    width: 100%;
+   
+}
+.page-header .banner .banner_more{
+    margin-top: 6rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    overflow: hidden;
+    background: url(../images/znxf/web_banner_more_off.png) no-repeat
+}
+.page-header .banner .banner_more:hover{
+    background: url(../images/znxf/web_banner_more_on.png) no-repeat
+}
+.page-header .brief{
+    position: absolute;
+    top:30%;
+    left: 18.75%;
+    width: 40%;
+    height: auto;
+    z-index: 99;
+    color:#FFFFFF;
+}
+.page-header .brief h1{
+    font-size: 4.4rem;
+    margin-bottom: 0.4rem
+}
+.page-header .brief p{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color:#D4D4D4;
+}
+.page-header .brief .text{
+    color:#D4D4D4;
+    padding-top:3%;
+    font-size: 1.4rem;
+    line-height: 2.4rem
+}
+.page-header .banner_nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(43,51,84,0.6)
+}
+.page-header .banner_nav li{
+    flex: 1;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.page-header .banner_nav li a{
+    color: #FFFFFF;
+}
+.page-header .banner_nav li p{
+    font-size: 2rem;
+    line-height: 2.6rem
+}
+.page-header .banner_nav li span{
+    font-size: 1.4rem;
+}
+.nav-active{
+    color:#396DF1 !important
+}
+
+
+/* page-footer */
+.page-footer{
+    background: #252536;
+    color:#D4D4D4;
+}
+.page-footer .wrap{
+    padding-top: 8%;
+}
+.page-footer .wrap .content{
+
+    padding-bottom: 10%;
+    border-bottom: 1px solid #2D2D40
+}
+.page-footer .wrap .content a{
+    color:#D4D4D4;
+    cursor: pointer
+}
+.page-footer .wrap .content a:hover{
+    color:#396DF1 !important
+}
+.page-footer .wrap .content .left{
+    width: 44%;
+    border-right: 1px solid #2D2D40;
+}
+.page-footer .wrap .content .left p{
+    font-size: 1.8rem;
+    margin-bottom: 4%
+}
+.page-footer .wrap .content .left li{
+    font-size: 1.2rem;
+    margin-bottom: 4%;
+}
+.page-footer .wrap .content .right{
+    width: 56%;
+    padding-left:8%;
+}
+.page-footer .wrap .content .right .item{
+    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+}
+.page-footer .wrap .content .right .item p{
+    font-size: 1.6rem;
+    padding-bottom: 12%;
+}
+
+.page-footer .wrap .content .right .item li{
+    margin-top: 12%;
+    font-size: 1.4rem;
+}
+.page-footer .gfwx{
+    width: 70%;
+    margin-top: 15%
+}
+.page-footer .footer-tip{
+    font-size: 1.2rem;
+    text-align: center;
+    padding:2% 0;
+}
+.page-footer .footer-tip a{
+    color:#ADADAD;
+}
+
+/* 關於我們 */
+.gywm-module{
+    background: url(../images/home/about/bg.png) no-repeat;
+    background-size: 100% 100%;
+    color:#D4D4D4;
+}
+.gywm-module .header{
+    padding:6% 0 3% 0;
+}
+.gywm-module .header h2,.gywm-module .header span{
+    color: #FFFFFF !important
+}
+.gywm-module .content .text{
+    text-indent:2.4rem;
+}
+.gywm-module .content .text p,.gywm-module .content .text span{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-bottom: 1rem
+}
+.gywm-module .content .box>div{
+    flex: 1;
+    text-align: center;
+    padding:7% 6%;
+    font-size: 1.4rem;
+}
+.gywm-module .content .box>div img{
+    margin-bottom: 1rem
+}
+.gywm-module .content .more{
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 6%
+}
+.gywm-module .content .more a{
+    color: #FFFFFF
+}

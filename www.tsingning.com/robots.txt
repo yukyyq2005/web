@@ -1,0 +1,91 @@
+User-agent: Baiduspider
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow:/*
+#Disallow: /
+User-agent: Sosospider
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: sogou spider
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: YodaoBot
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: Googlebot
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: Bingbot
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: Slurp
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: MSNBot
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: googlebot-image
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: googlebot-mobile
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: yahoo-blogs/v3.9
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: psbot
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
+User-agent: *
+Allow:/*.jpg$
+Allow:/*.gif$
+Allow:/*.png$
+Allow:/*.bmp$
+Allow: /wp-content/uploads/*
+Disallow: /
