@@ -12,16 +12,47 @@
 		// 		$(".divid").hide();
 		// 	});
 		// });
+		var url="http://localhost:8802/"
+
 		$(function(){
 			$("button").click(function(){
 				// $("p").hide();
 				// $(".divid").hide(1000);
 				// $(".divid1").animate({left:'250px'});
-				alert($("p").text());
+				// alert($("p").text());
 			});
 			$("p").click(function(){
 				// alert("test");
 			});
+			$("#btn2").click(function(){
+				// alert("开始请求");
+				//http://localhost:8802/entrance
+				//http://test.qingning123.com/worksite/appVersion/getLatestAppVersion.do?platform=2
+				// $.post("http://localhost:8802/entrance",
+				// {
+				// 	token:"token",
+				// 	name:"菜鸟教程",
+				// 	url:"http://www.runoob.com"
+				// },
+				// function(data,status){
+				// 	alert("数据: \n" + data + "\n状态: " + status);
+				// },"json");
+				var opt = {"app_name":"王者荣耀","nickname":"纯纯的1907","add_time":"2018-08-01"};
+				$.ajax({
+					type: "post",
+					url: url+"entrance",
+					dataType : "json",
+					contentType : "application/json",
+					data: JSON.stringify(opt),
+					success: function (d) {
+						var x = document.createElement("LI");
+						var t = document.createTextNode(d.app_name);
+						x.appendChild(t);
+						document.getElementById("myList").appendChild(x);
+					}
+				});
+			});
+
 		});
 	</script>
 	<style type="text/css">
@@ -241,9 +272,29 @@
 
 		 
 	</style>
-	<title>111</title>
+	<title>1</title>
 </head>
 <body>
+
+	<div id="resText"></div>
+
+	<button id="btn2">添加列表项</button>
+
+	<ol id="myList">
+		<li>咖啡</li>
+		<li>红茶</li>
+		<li>牛奶</li>
+		<li>橙汁</li>
+	</ol>
+
+
+	<div>
+		<ol>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+		</ol>
+	</div>
 
 	<ul id="list" class="float-ul">
 		<li class="float-ul">
